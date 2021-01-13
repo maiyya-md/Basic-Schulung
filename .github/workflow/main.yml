@@ -2,13 +2,13 @@ name: Basic-Schulung
 on:
    push:
    workflow_dispatch:
-   
+     
 jobs:
  build:
-  name: My first Aktion
+  name: My first Action
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v1
     - uses: ./action-a
-      with: 
+      with:
         MY_NAME: Alex
